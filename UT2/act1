@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>coches</title>
+    <body> 
+        <ul>
+            <li><a href="html/modelo1.html">Modelo 1: FastCar X</a></li>
+            <li><a href="html/modelo2.html">Modelo 2: Speedy Z</a></li>
+            <li><a href="html/modelo3.html">Modelo 3: EcoDrive Y</a></li>
+        </ul>
+    </body>        
+    </head>
