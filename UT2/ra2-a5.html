@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurador de Coche</title>
+</head>
+<body>
+    <h1>Bienvenido al Configurador de Coches</h1>
+    <a href="#formulario-configuracion">Configura tu coche aquí</a>
+    <hr>
+
+    <form id="formulario-configuracion" action="procesar_formulario.php" method="POST">
+        <fieldset>
+            <legend>Configuración del Vehículo</legend>
+            
+            <label for="modelo">Modelo de coche:</label>
+            <select id="modelo" name="modelo" required>
+                <option value="" disabled selected>Elige un modelo...</option>
+                <option value="sedan">Sedán</option>
+                <option value="suv">SUV</option>
+                <option value="coupe">Coupé</option>
+                <option value="hatchback">Hatchback</option>
+            </select>
+            <br><br>
+
+            <label for="motor">Motor:</label>
+            <select id="motor" name="motor" required>
+                <option value="" disabled selected>Elige un motor...</option>
+                <option value="diesel">Diésel</option>
+                <option value="gasolina">Gasolina</option>
+                <option value="hibrido">Híbrido</option>
+            </select>
+            <br><br>
+
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+            <br><br>
+
+            <label>Número de puertas:</label>
+            <input type="radio" id="puertas-3" name="puertas" value="3" checked>
+            <label for="puertas-3">3</label>
+            <input type="radio" id="puertas-5" name="puertas" value="5">
+            <label for="puertas-5">5</label>
+            <br><br>
+
+            <label>Extras:</label><br>
+            <input type="checkbox" id="aire" name="extras" value="aire">
+            <label for="aire">Aire acondicionado</label><br>
+            <input type="checkbox" id="gps" name="extras" value="gps">
+            <label for="gps">GPS</label><br>
+            <input type="checkbox" id="asientos-calefactables" name="extras" value="asientos-calefactables">
+            <label for="asientos-calefactables">Asientos calefactables</label><br>
+            <input type="checkbox" id="camara" name="extras" value="camara">
+            <label for="camara">Cámara trasera</label><br>
+            <input type="checkbox" id="techo-solar" name="extras" value="techo-solar">
+            <label for="techo-solar">Techo solar</label><br>
+            <input type="checkbox" id="bluetooth" name="extras" value="bluetooth">
+            <label for="bluetooth">Bluetooth</label><br>
+            <br>
+
+            <label for="comentarios">Comentarios adicionales:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tus comentarios..."></textarea>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" size="10" required>
+            <br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" size="20" required>
+            <br><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" size="60" required>
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" maxlength="9" required>
+            <br><br>
+
+            <label>Género:</label>
+            <input type="radio" id="genero-masculino" name="genero" value="masculino">
+            <label for="genero-masculino">Masculino</label>
+            <input type="radio" id="genero-femenino" name="genero" value="femenino">
+            <label for="genero-femenino">Femenino</label>
+        </fieldset>
+        <br>
+        
+        <button type="submit">Enviar formulario</button>
+        <button type="reset">Limpiar formulario</button>
+    </form>
+    <footer>
+        <p>Autor: Raúl Fraile Gándara</p>
+        <p>Licencia: Creative Commons</p>
+        <p>Ultima actualización: 25/11/2024</p>
+    </footer>
+</body>
+</html>

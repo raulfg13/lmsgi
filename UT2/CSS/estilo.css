@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif red;
+  margin: 20px;
+  color: red;
+  }
+h1 {
+  color: white;
+}
+h2{
+  color: white;
+}
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.section h2 {
+  margin-top: 0;
+}
+.buttons {
+  margin-top: 20px;
+}
+.buttons button {
+  margin-right: 10px;
+}
+header{
+  background-color: black;
+  padding: 10px 20px;
+}
+li a{
+  color: black;
+  text-align: right;
+  border-left: 20%;
+}
+li{
+  display: inline;
+  background-color: white;
+  padding:static;
+  text-align:right;
+}
+#horizontal-menu{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#header-logo{
+  height: 50px;
+  margin-right:20px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li{    
+  vertical-align:top;  
+  display:inline-block;    
+  position:relative;  
+  margin-right: 40px;
+}  
+footer{
+  color: black;
+}

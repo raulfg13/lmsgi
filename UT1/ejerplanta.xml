@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centroDecoracion   xmlns="http://www.ejemplo.com/plantaville" 
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                    xsi:schemaLocation="http://www.ejemplo.com/plantaville plantaville.xsd">
+    
+    <edificio nombre="Almacén Central">
+        <planta nombre="Primera Planta">
+            <sala nombre="Sala Norte">
+                <planta>
+                    <denominacion>Castaño</denominacion>
+                    <nombretecnico>Castañum</nombretecnico>
+                    <nombrecomun>Castaño</nombrecomun>
+                    <floracion></floracion>
+                    <frecuenciaderiego></frecuenciaderiego>
+                    <luzsolar></luzsolar>
+                </planta>
+    </edificio>
+        </planta>
+            </sala>                

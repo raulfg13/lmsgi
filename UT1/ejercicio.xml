@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centrodecoracion   xmlns="http://www.ejemplo.com/plantaville"    
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                    xsi:schemaLocation="http://www.ejemplo.com/plantaville plantaville.xsd">
+    <edificios:planta1>
+        <edificio:planta nombre="Primera Planta">
+            <sala nombre="Sala Norte">
+                <planta>edificio 1 </planta>
+                    <denominacion>Castaño</denominacion>
+                    <nombretecnico>Casta</nombretecnico>
+                    <nombrecomun>Castaño común</nombrecomun>
+                    <tipohoja>Caduca</tipohoja>
+                    <floracion>Primavera</floracion>
+                    <frecuenciariego>Moderada</frecuenciariego>
+                    <luzsolar>Plena</luzsolar>
+                    <informaciontecnica>
+                        <tiposustrato>Suelo ácido</tiposustrato>
+                        <tipoabono>Orgánico</tipoabono>
+                        <cuidadosespeciales>Proteger de heladas fuertes</cuidadosespeciales>
+                    </informaciontecnica>
+            </sala>
+            <sala nombre="Sala Este">
+                <planta>edificio 1</planta>
+                    <denominacion>Roble</denominacion>
+                    <nombretecnico>Quercus robur</nombretecnico>
+                    <nombrecomun>Roble común</nombrecomun>
+                    <tipohoja>Caduca</tipohoja>
+                    <floracion>Primavera</floracion>
+                    <frecuenciariego>Baja</frecuenciariego>
+                    <luzsolar>Plena</luzsolar>
+                    <informacionTecnica>
+                        <tipoSustrato>Suelo bien drenado</tipoSustrato>
+                        <tipoAbono>No requerido</tipoAbono>
+                        <cuidadosEspeciales>Asegurar espacio amplio</cuidadosEspeciales>
+                    </informacionTecnica>
+            </sala>
+        </edificio:planta>
+    </edificios:planta1>
+    <edificios:planta2>
+        <edificio:planta nombre="Planta Baja">
+            <sala nombre="Sala Principal">
+                <planta>edificio2</planta>
+                    <denominacion>Pino</denominacion>
+                    <nombreTecnico>Pinus sylvestris</nombreTecnico>
+                    <nombreComun>Pino silvestre</nombreComun>
+                    <tipoHoja>Perenne</tipoHoja>
+                    <floracion>Primavera</floracion>
+                    <frecuenciaRiego>Baja</frecuenciaRiego>
+                    <luzSolar>Plena</luzSolar>
+                    <informacionTecnica>
+                        <tipoSustrato>Arenoso</tipoSustrato>
+                        <tipoAbono>No requerido</tipoAbono>
+                        <cuidadosEspeciales>Evitar exceso de agua</cuidadosEspeciales>
+                    </informacionTecnica>
+            </sala>
+        </edificio:planta>
+    </edificios:planta2>
+</centrodecoracion>

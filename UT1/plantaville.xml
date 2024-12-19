@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centrodecoracion   xmlns="http://www.ejemplo.com/plantaville" 
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                    xsi:schemaLocation="http://www.ejemplo.com/plantaville plantaville.xsd">
+    <edificio nombre="Almacén Central">
+        <planta nombre="Primera Planta">
+            <sala nombre="Sala Norte">
+                <planta>
+                    <denominacion>Castaño</denominacion>
+                    <nombretecnico>Castañum</nombretecnico>
+                    <nombrecomun>Castaño común</nombrecomun>
+                    <tipohoja>Caduca</tipohoja>
+                    <floracion>Primavera</floracion>
+                    <frecuenciariego>Alta</frecuenciariego>
+                    <luzsolar>Directa</luzsolar>
+                    <informaciontecnica>
+                        <tiposustrato>Suelo seco</tiposustrato>
+                        <tipoabono>Orgánico</tipoabono>
+                        <cuidadosespeciales>Proteger del viento</cuidadosespeciales>
+                    </informaciontecnica>
+                </planta>
+            </sala>
+            <sala nombre="Sala Este">
+                <planta>
+                    <denominacion>Roble</denominacion>
+                    <nombretecnico>Roblum</nombretecnico>
+                    <nombrecomun>Roble común</nombrecomun>
+                    <tipohoja>Caduca</tipohoja>
+                    <floracion>Primavera</floracion>
+                    <frecuenciariego>Baja</frecuenciariego>
+                    <luzsolar>Indirecta</luzsolar>
+                    <informaciontecnica>
+                        <tiposustrato>Aguado</tiposustrato>
+                        <tipoabono>Orgánico</tipoabono>
+                        <cuidadosespeciales>Proteger del calor</cuidadosespeciales>
+                    </informaciontecnica>
+                </planta>
+            </sala>
+        </planta>
+    </edificio>
+    <edificio nombre="Almacén Secundario">
+        <planta nombre="Planta Baja">
+            <sala nombre="Sala Principal">
+                <planta>
+                    <denominacion>Pino</denominacion>
+                    <nombretecnico>Pinum</nombretecnico>
+                    <nombrecomun>Pino común</nombrecomun>
+                    <tipohoja>Perenne</tipohoja>
+                    <floracion>Primavera</floracion>
+                    <frecuenciariego>Baja</frecuenciariego>
+                    <luzsolar>Directa</luzsolar>
+                    <informaciontecnica>
+                        <tiposustrato>Arenoso</tiposustrato>
+                        <tipoabono>Orgánico</tipoabono>
+                        <cuidadosespeciales>Proteger del agua</cuidadosespeciales>
+                    </informaciontecnica>
+                </planta>
+            </sala>
+        </planta>
+    </edificio>
+</centrodecoracion>
+<!-- Raúl Fraile Gándara -->
