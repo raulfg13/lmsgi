@@ -1,67 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio Futurista</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Mi Nombre</h1>
-            <p>Desarrollador Web | Diseñador UX | Apasionado por la Tecnología</p>
-        </header>
-
-        <div class="profile">
-            <img src="img/profile.jpg" alt="Foto de perfil">
-            <div class="profile-info">
-                <h2>Sobre mí</h2>
-                <p>Hola, soy un desarrollador web con experiencia en la creación de sitios dinámicos y modernos. Me encanta trabajar en proyectos desafiantes y aprender nuevas tecnologías.</p>
-            </div>
-        </div>
-
-        <section>
-            <h3>Habilidades</h3>
-            <ul class="skills">
-                <li>HTML5, CSS3, JavaScript</li>
-                <li>Frameworks: React, Angular</li>
-                <li>Diseño Responsivo y UX/UI</li>
-                <li>Gestión de Bases de Datos (SQL, MongoDB)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Educación</h3>
-            <ul class="education">
-                <li>
-                    <strong>Ingeniería en Sistemas</strong> - Universidad Ejemplo (2018 - 2022)
-                    <p>Especialización en desarrollo de software y diseño web.</p>
-                </li>
-                <li>
-                    <strong>Certificación en Desarrollo Web</strong> - Platzi (2023)
-                    <p>Curso avanzado en HTML, CSS y JavaScript.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Experiencia</h3>
-            <ul class="experience">
-                <li>
-                    <strong>Desarrollador Frontend</strong> - Empresa Ejemplo (2023 - Presente)
-                    <p>Implementación de interfaces web dinámicas y diseño responsivo.</p>
-                </li>
-                <li>
-                    <strong>Practicante de Desarrollo Web</strong> - Otra Empresa (2022 - 2023)
-                    <p>Participación en proyectos colaborativos usando React y Node.js.</p>
-                </li>
-            </ul>
-        </section>
+    <!-- Fondo dinámico -->
+    <div id="dynamicBackground">
+        <canvas id="matrixCanvas"></canvas>
     </div>
 
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="skils.html">Habilidades</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="hero">
+            <h1 class="glitch" data-text="Bienvenido al Futuro">Bienvenido al Futuro</h1>
+            <p class="subtitle">Soy <span id="name">[Tu Nombre]</span>, desarrollador y experto en hacking ético.</p>
+        </section>
+
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un apasionado por la ciberseguridad y la innovación tecnológica. Trabajo con las mejores prácticas 
+                en hacking ético para proteger y mejorar la seguridad digital de empresas y usuarios.
+            </p>
+            <img src="your-photo.jpg" alt="Foto personal" class="profile-photo">
+            <a href="cv.pdf" class="btn-download">Descargar CV</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Mi Nombre | <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
+        <div class="social-links">
+            <h3>Conéctate</h3>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="social-icon">GitHub</a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+        </div>
     </footer>
+
+    <!-- Script para el efecto Matrix -->
+    <script>
+        const canvas = document.getElementById("matrixCanvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const columns = Math.floor(canvas.width / 20);
+        const rainDrops = new Array(columns).fill(0);
+
+        function drawMatrix() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00ff00"; /* Color de los números Matrix */
+            ctx.font = "20px monospace";
+
+            for (let i = 0; i < rainDrops.length; i++) {
+                const text = String.fromCharCode(0x30A0 + Math.random() * 96);
+                ctx.fillText(text, i * 20, rainDrops[i] * 20);
+
+                if (rainDrops[i] * 20 > canvas.height && Math.random() > 0.975) {
+                    rainDrops[i] = 0;
+                }
+                rainDrops[i]++;
+            }
+        }
+
+        setInterval(drawMatrix, 50);
+
+        // Ajustar el tamaño del canvas al cambiar el tamaño de la ventana
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
 </body>
 </html>
