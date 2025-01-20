@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #00f; /* Azul para efectos */
-    --background-color: #1a1a2e; /* Color de fondo principal */
+    --primary-color: rgb(30, 255, 0); /* Azul para efectos */
+    --background-color: #000000; /* Color de fondo principal */
     --text-color: #ffffff;
-    --accent-color: #00f;
+    --accent-color: rgb(0, 255, 13);
 }
 
 body {
@@ -147,3 +147,34 @@ footer .social-links a {
 footer .social-links a:hover {
     color: var(--accent-color);
 }
+
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.skill-tile {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-tile:hover {
+    transform: scale(1.05);
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.skill-tile img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
