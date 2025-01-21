@@ -177,4 +177,279 @@ footer .social-links a:hover {
     height: 50px;
     margin-bottom: 0.5rem;
 }
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+  .project-section {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .project-phrase {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: all 0.3s ease; /* Animación suave */
+    cursor: pointer;
+  }
+  
+  .project-phrase:hover {
+    color: #007bff; /* Cambia el color */
+    transform: scale(1.1); /* Agranda ligeramente el texto */
+    text-decoration: underline; /* Subraya el texto */
+  }
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+  }
+  
+  .portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .project-card {
+    background-color: #1e1e1e; /* Color de fondo del recuadro */
+    border: 2px solid #333; /* Borde del recuadro */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #4caf50; /* Color del título */
+  }
+  
+  .project-card p {
+    font-size: 1em;
+    margin: 0;
+    color: #ddd; /* Color del texto de descripción */
+  }
+  
+  /* Efecto hover */
+  .project-card:hover {
+    transform: scale(1.1); /* Agranda el recuadro */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombras más fuertes */
+    border-color: #4caf50; /* Cambia el color del borde */
+  }
+  /* Centrar contenedores de la sección del portafolio */
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la pantalla */
+    box-sizing: border-box; /* Incluye padding y border en las dimensiones */
+}
+/* Levantar los contenedores de la página del portafolio */
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    margin-top: -400px; /* Ajuste para levantar los contenedores */
+}
+/* Efecto de máquina de escribir */
+.typewriter {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 10rem; /* Ajuste del margen superior para posicionarlo más abajo */
+    overflow: hidden; /* Oculta el contenido sobrante durante la animación */
+    border-right: 2px solid var(--accent-color); /* Cursor simulando la máquina de escribir */
+    white-space: nowrap; /* Evita que el texto haga saltos de línea */
+    width: 0; /* Inicia sin mostrar el texto */
+    margin: 10rem auto 0; /* Centrado horizontal y ajustado vertical */
+    animation: typing 3s steps(30, end) forwards, blink 0.5s step-end infinite;
+}
 
+/* Animación de escritura */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* Revela todo el texto */
+    }
+}
+
+/* Efecto de parpadeo del cursor */
+@keyframes blink {
+    from {
+        border-right-color: var(--accent-color);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+/* Efecto de desvanecimiento y escala para Habilidades */
+.fade-scale {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 3rem;
+    opacity: 0; /* Inicia invisible */
+    transform: scale(0.5); /* Comienza con un tamaño pequeño */
+    animation: fadeInScale 2s forwards; /* Efecto de animación */
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Efecto de Resplandor */
+.glow {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 7rem;
+    text-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color), 0 0 15px var(--accent-color);
+    animation: glowEffect 1.5s infinite alternate;
+}
+
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color), 0 0 15px var(--accent-color);
+    }
+    100% {
+        text-shadow: 0 0 20px var(--accent-color), 0 0 30px var(--accent-color), 0 0 40px var(--accent-color);
+    }
+}
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+/* Contenedores de habilidades */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre contenedores */
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Permite el salto a la siguiente línea en caso de espacio insuficiente */
+}
+
+.skill-container {
+    background-color: #1e1e1e;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px; /* Tamaño reducido */
+    text-align: center;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateX(50px); /* Comienza desplazado hacia la derecha */
+    animation: fadeInEffect 1s forwards;
+}
+
+.skill-container h2 {
+    font-size: 1.1rem; /* Ajustar el tamaño del texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Efecto de difuminado de aparición */
+@keyframes fadeInEffect {
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Desplaza al lugar original */
+    }
+}
+
+/* Estilo de los títulos */
+h1, h2 {
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.fade-scale {
+    font-size: 3.5rem;
+    animation: fadeScaleEffect 2s ease-out;
+}
+
+/* Efecto de escalado y aparición para el título */
+@keyframes fadeScaleEffect {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #fff;
+}

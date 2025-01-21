@@ -41,3 +41,15 @@ window.addEventListener('resize', () => {
     drops.length = Math.floor(canvas.width / fontSize);
     drops.fill(0);
 });
+// Seleccionar todas las frases
+const phrases = document.querySelectorAll('.project-phrase');
+
+phrases.forEach(phrase => {
+  phrase.addEventListener('mouseover', () => {
+    phrase.style.color = '#ff5733'; // Cambia a un color específico
+  });
+
+  phrase.addEventListener('mouseout', () => {
+    phrase.style.color = ''; // Restaura el estilo original
+  });
+})
