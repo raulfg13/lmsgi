@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- La linea anterior, el prólogo, ha de ser OBLIGATORIAMENTE la primera del 
+    documento. En ella se define la versión del lenguaje con el que se va a trabajar,
+	el conjunto de caracteres con el que se guarda la información y si es necesario 
+	algún otro fichero para interpretar este.
+-->
+<!-- Definimos el tipo de documento que vamos a crear, en este caso un videoclub -->
+<! DOCTYPE videoclub>	
+<!-- Definición del ejemplar del documento, en este caso es el elemento <videoclub> -->
+<videoclub>
+	<!-- En este caso agrupamos los elementos iguales, es decir, las películas, los videojuegos y la comida -->
+	<peliculas>
+		<!-- Identificamos cada pelicula con el título, haciendo que este sea un atributo -->
+		<pelicula titulo="El resplandor" anio="1980" cantidad="10" duracion="146 minutos" />
+		<pelicula titulo="Zombies Party" anio="2004" cantidad="5" duracion="99 minutos" />
+	</peliculas>
+	<videojuegos>
+		<!-- Identificamos cada videojuego con el nombre, haciendo que este sea un atributo -->
+		<videojuego nombre="GTA V"  distribuidor="Rockstar Games" anio="2013">
+			<generos>
+				<genero>Acción</genero>
+				<genero>Mundo abierto</genero>
+			</generos>
+			<plataformas>
+				<plataforma>PS4</plataforma>
+				<plataforma>PC</plataforma>
+				<plataforma>Xbox 360</plataforma>
+			</plataformas>
+		</videojuego>
+		<videojuego nombre="Red Dead Redemtion 2" distribuidor="Rockstar Games" anio="2018">
+			<generos>
+				<genero>Acción</genero>
+				<genero>Mundo abierto</genero>
+				<genero>Oeste americano</genero>
+			</generos>
+			<plataformas>
+				<plataforma>PS4</plataforma>
+				<plataforma>Xbox 360</plataforma>
+			</plataformas>
+		</videojuego>
+		<videojuego nombre="Diablo" distribuidor="Blizzard North" anio="1996">
+			<generos>
+				<genero>Rol</genero>
+			</generos>
+			<plataformas>
+				<plataforma>PC</plataforma>
+			</plataformas>
+		</videojuego>
+	</videojuegos>
+	<comidas>
+		<comida producto="Manzana" stock="20 Kg" proveedor="Fruteria Paco"/>
+	</comidas>
+</videoclub>

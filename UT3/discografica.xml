@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE discografica SYSTEM "discografica.dtd">
+<discografica>
+    <grupos>
+        <grupo nombre="Metallica" estilo="Trash Metal">
+            <componentes>
+                <componente instrumento="Voz y Guitarra">James Hetfield</componente>
+                <componente instrumento="Bateria">Lars Ulrich</componente>
+                <componente instrumento="Bajo">Robert Trujillo</componente>
+                <componente instrumento="Guitarra">Kirk Hammett</componente>
+            </componentes>
+            <discos>
+                <disco orden="1">Kill'Em All</disco>
+                <disco orden="2">RideTheLightning</disco>
+                <disco orden="3">MasterofPuppets</disco>
+                <disco orden="4">...AndJusticeForAll</disco>
+                <disco orden="5">Metallica</disco>
+            </discos>
+        </grupo>
+        <grupo= nombre="Pearl Jam" estilo="RockRoll">
+            <discos>
+                <disco orden="1">Ten</disco>
+                <disco orden="2">Vs.</disco>
+                <disco orden="3">Vitalogy</disco>
+            </discos>
+            <componentes>
+                <componente instrumento="Voz">Eddie Vedder</componente>
+                <componente instrumento="Guitarra">Mike McCready</componente>
+                <componente instrumento="Guitarra">Stone Gossard</componente>
+                <componente instrumento="Bajo">Jeff Ament</componente>
+                <componente instrumento="Bateria">Matt Cameron</componente>
+                <componente instrumento="Teclado">Kenneth Gaspar</componente>
+            </componentes>
+        </grupo=>
+        <grupo nombre="O'funk'illo" estilo="Funk Rock">
+            <componentes>
+                <componente instrumento="Voz">Andreas Lutz</componente>
+                <componente instrumento="Bajo">Pepe Bao</componente>
+                <componente instrumento="Guitarra">Javi Lynch Marssiano</componente>
+            </componentes>
+            <discos>
+                <disco orden="1">OFunkillo</disco>
+                <disco orden="2">EnelPlanetaAseituna</disco>
+                <disco orden="3">Notecabena</disco>
+                <disco orden="4">SesiónGolfa</disco>
+                <disco orden="5">5mentario</disco>
+            </discos>
+        </grupo>
+    </grupos>
+    <empleados>Implementacion pendiente</empleados>
+</discografica>
