@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personajes SYSTEM "personajes.dtd">
+<personajes>
+    <personaje id="PF" nombre="Luke Skywalker" anno_nacimiento="19BBY" genero="masculino">
+        <caracteristicas_fisicas altura="172" peso="77" color_pelo="rubio" color_piel="clara" color_ojos="azul"/>
+        <planeta id="0001" nombre="Tatooine" poblacion="200000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="23" periodo_orbital="304" diametro="10465" clima="árido">
+                <superficie terreno="desértico" agua="1"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+    <personaje id="RP" nombre="C-3PO" anno_nacimiento="112BBY" genero="n/a">
+        <caracteristicas_fisicas altura="167" peso="75" color_pelo="n/a" color_piel="dorado" color_ojos="amarillo"/>
+        <planeta id="0001" nombre="Tatooine" poblacion="200000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="23" periodo_orbital="304" diametro="10465" clima="árido">
+                <superficie terreno="desértico" agua="1"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+    <personaje id="RA" nombre="R2-D2" anno_nacimiento="33BBY" genero="n/a">
+        <caracteristicas_fisicas altura="96" peso="32" color_pelo="n/a" color_piel="blanco, azul" color_ojos="rojo"/>
+        <planeta id="0008" nombre="Naboo" poblacion="4500000000" idioma="gungans, galactico básico">
+            <datos_fisicos periodo_rotacion="26" periodo_orbital="312" diametro="12120" clima="temperate">
+                <superficie terreno="colinas" agua="12"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+    <personaje id="PF2" nombre="Darth Vader" anno_nacimiento="419BBY" genero="masculino">
+        <caracteristicas_fisicas altura="202" peso="136" color_pelo="ninguno" color_piel="blanca" color_ojos="amarillo"/>
+        <planeta id="0001" nombre="Tatooine" poblacion="200000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="23" periodo_orbital="304" diametro="10465" clima="árido">
+                <superficie terreno="desértico" agua="1"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+    <personaje id="PF3" nombre="Leia Organa" anno_nacimiento="19BBY" genero="femenino">
+        <caracteristicas_fisicas altura="150" peso="49" color_pelo="marrón" color_piel="clara" color_ojos="marrón"/>
+        <planeta id="2" nombre="Alderaan" poblacion="2000000000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="24" periodo_orbital="364" diametro="12500" clima="templado">
+                <superficie terreno="campos montañosos" agua="40"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+    <personaje id="PF4" nombre="Owen Lars" anno_nacimiento="52BBY" genero="masculino">
+        <caracteristicas_fisicas altura="178" peso="120" color_pelo="marrón, gris" color_piel="clara" color_ojos="azul"/>
+        <planeta id="0001" nombre="Tatooine" poblacion="200000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="23" periodo_orbital="304" diametro="10465" clima="árido">
+                <superficie terreno="desértico" agua="1"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+</personajes>
