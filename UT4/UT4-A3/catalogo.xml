@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="./catalogo.xsl"?>
+<catalogo>
+    <producto>
+        <nombre>Producto 1</nombre>
+        <descripcion>Descripción del producto 1</descripcion>
+        <precio>10.99</precio>
+    </producto>
+    <producto>
+        <nombre>Producto 2</nombre>
+        <descripcion>Descripción del producto 2</descripcion>
+        <precio>15.99</precio>
+    </producto>
+    <producto>
+        <nombre>Producto 3</nombre>
+        <descripcion>Descripción del producto 3</descripcion>
+        <precio>20.99</precio>
+    </producto>
+</catalogo>
