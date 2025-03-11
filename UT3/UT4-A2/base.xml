@@ -1,0 +1,14 @@
+<ventas>
+    <categoria>
+        <nombre>Electrónica</nombre>
+        <venta>1500</venta>
+    </categoria>
+    <categoria>
+        <nombre>Ropa</nombre>
+        <venta>800</venta>
+    </categoria>
+    <categoria>
+        <nombre>Libros</nombre>
+        <venta>1200</venta>
+    </categoria>
+</ventas>
